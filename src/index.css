@@ -1,0 +1,71 @@
+/* GENERAL */
+:root{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* REACT */
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope{
+  position: relative;
+  width: 40vw;
+  height: 20vw;
+  
+  box-shadow: .5rem .5rem 20rem 5rem #888;
+  font-size: 150%;
+}
+
+.sender{
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.recipient{
+  position: absolute;
+  bottom: 10rem;
+  right: 5rem;
+  text-align: right;
+}
+
+.sender *,
+.recipient *{
+  margin-bottom: 1rem;
+}
+
+.stamp{
+  min-width: 8rem;
+  min-height: 8rem;
+  border: .1rem solid #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  padding: 1rem;
+}
